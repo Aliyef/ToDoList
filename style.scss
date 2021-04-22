@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 3, 14);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+#container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 70%;
+
+    i{
+        color: whitesmoke;
+        font-size: 25px;
+        
+    }
+
+    h1{
+        font-size: 50px;
+        color: #0f910f;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 1.5em;
+        text-shadow: 1px 1px 7px  rgb(0, 0, 0);
+        letter-spacing: 5px;
+    }
+
+    .input{
+
+        #inputtext{
+            padding: 15px 20px;
+            width: 30em;
+            border-radius:10px ;
+            border: none;
+            outline: none;
+            margin-bottom: 50px;
+            box-shadow: 5px 5px 10px black;
+        }
+        #inputadd{
+            border: none;
+            padding: 15px 30px;
+            border-radius: 12px;
+            outline: none;
+            cursor: pointer;
+            background-color:#005e00 ;
+            color: whitesmoke;
+            text-transform: uppercase;
+            box-shadow: 5px 5px 10px black;
+            margin-left: 1em;
+
+        }
+        #inputclear{
+            border: none;
+            padding: 15px 30px;
+            border-radius: 12px;
+            outline: none;
+            cursor: pointer;
+            background-color:#a81403;
+            color: whitesmoke;
+            text-transform: uppercase;
+            box-shadow: 5px 5px 10px black;
+            margin-left: 0.5em;
+
+        }
+    }
+
+
+    .child{
+        margin-top: 2em;
+        overflow: scroll;
+
+        &::-webkit-scrollbar{
+            width: 0px;
+            background-color: transparent;
+        }
+    }
+   
+
+
+
+
+}
+
+.style{
+    color: rgb(153, 153, 153);
+    font-size: 20px;
+    border-bottom: 1px solid rgb(24, 24, 24);
+    width: 100%;
+    padding: 10px 15em;
+
+   
+  
+    
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 940px) {
+  
+
+
+
+
+    #container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 70%;
+        transition: 1s;
+    
+        i{
+            color: whitesmoke;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+    
+        h1{
+            font-size: 20px;
+            color: #0f910f;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 1.5em;
+            text-shadow: 1px 1px 7px  rgb(0, 0, 0);
+            letter-spacing: 5px;
+            margin-top: 5em;
+        }
+    
+        .input{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            #inputtext{
+                padding: 10px 20px;
+                width: 13em;
+                border-radius:10px ;
+                border: none;
+                outline: none;
+                margin-bottom: 20px;
+                box-shadow: 5px 5px 10px black;
+            }
+            #inputadd{
+                border: none;
+                padding: 15px 40px;
+                border-radius: 12px;
+                outline: none;
+                cursor: pointer;
+                background-color:#005e00 ;
+                color: whitesmoke;
+                text-transform: uppercase;
+                box-shadow: 5px 5px 10px black;
+                margin-left: 0em;
+                margin-bottom: 10px;
+    
+            }
+            #inputclear{
+                border: none;
+                padding: 15px 30px;
+                border-radius: 12px;
+                outline: none;
+                cursor: pointer;
+                background-color:#a81403;
+                color: whitesmoke;
+                text-transform: uppercase;
+                box-shadow: 5px 5px 10px black;
+                margin-left: 0em;
+    
+            }
+        }
+    
+    
+        .child{
+            margin-top: 2em;
+            overflow: scroll;
+    
+            &::-webkit-scrollbar{
+                width: 0px;
+                background-color: transparent;
+            }
+        }
+       
+    
+    
+    
+    
+    }
+
+
+    .style{
+        color: rgb(153, 153, 153);
+        font-size: 20px;
+        border-bottom: 1px solid rgb(24, 24, 24);
+        width: 100%;
+        padding: 10px 3em;
+    
+       
+      
+        
+    
+    
+    }
+
+
+
+  }

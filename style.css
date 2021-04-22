@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #03030e;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+  width: 70%;
+}
+
+#container i {
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+#container h1 {
+  font-size: 50px;
+  color: #0f910f;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1.5em;
+  text-shadow: 1px 1px 7px black;
+  letter-spacing: 5px;
+}
+
+#container .input #inputtext {
+  padding: 15px 20px;
+  width: 30em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+}
+
+#container .input #inputadd {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+  background-color: #005e00;
+  color: whitesmoke;
+  text-transform: uppercase;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+  margin-left: 1em;
+}
+
+#container .input #inputclear {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+  background-color: #a81403;
+  color: whitesmoke;
+  text-transform: uppercase;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+  margin-left: 0.5em;
+}
+
+#container .child {
+  margin-top: 2em;
+  overflow: scroll;
+}
+
+#container .child::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+.style {
+  color: #999999;
+  font-size: 20px;
+  border-bottom: 1px solid #181818;
+  width: 100%;
+  padding: 10px 15em;
+}
+
+@media only screen and (max-width: 940px) {
+  #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 70%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  #container i {
+    color: whitesmoke;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  #container h1 {
+    font-size: 20px;
+    color: #0f910f;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1.5em;
+    text-shadow: 1px 1px 7px black;
+    letter-spacing: 5px;
+    margin-top: 5em;
+  }
+  #container .input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #container .input #inputtext {
+    padding: 10px 20px;
+    width: 13em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 5px 5px 10px black;
+            box-shadow: 5px 5px 10px black;
+  }
+  #container .input #inputadd {
+    border: none;
+    padding: 15px 40px;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    background-color: #005e00;
+    color: whitesmoke;
+    text-transform: uppercase;
+    -webkit-box-shadow: 5px 5px 10px black;
+            box-shadow: 5px 5px 10px black;
+    margin-left: 0em;
+    margin-bottom: 10px;
+  }
+  #container .input #inputclear {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    background-color: #a81403;
+    color: whitesmoke;
+    text-transform: uppercase;
+    -webkit-box-shadow: 5px 5px 10px black;
+            box-shadow: 5px 5px 10px black;
+    margin-left: 0em;
+  }
+  #container .child {
+    margin-top: 2em;
+    overflow: scroll;
+  }
+  #container .child::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+  }
+  .style {
+    color: #999999;
+    font-size: 20px;
+    border-bottom: 1px solid #181818;
+    width: 100%;
+    padding: 10px 3em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
